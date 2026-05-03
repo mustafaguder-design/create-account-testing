@@ -108,4 +108,11 @@ public class CreateAccountValidatorTest {
     void nullPasswordTest() {
         assertFalse(validator.isValidPassword(null));
     }
+
+    // EXTRA TEST FOR PULL REQUEST
+
+    @Test
+    void anotherValidEmailTest() {
+        assertTrue(validator.isValidEmail("student@test.com"));
+    }
 }
